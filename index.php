@@ -7,7 +7,8 @@
   	<title>Example</title>
   </head>
   <body>
-    <p>Permitted access, Welcome <strong><?php echo $kr_first_name." ".$kr_last_name; ?></strong></p> 
+    <p>Permitted access, Welcome <strong><?php echo $kr_first_name." ".$kr_last_name; ?></strong></p>
+    <p><strong>ID:</strong> <?php echo $kr_id; ?></p> 
     <p><strong>Name:</strong> <?php echo $kr_first_name; ?></p>
     <p><strong>Last Name:</strong> <?php echo $kr_last_name; ?></p>
     <p><strong>User:</strong> <?php echo $kr_user; ?></p>
