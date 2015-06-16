@@ -56,7 +56,7 @@
 		<h1>New User</h1>
 		<form method="post">
 			<div><input type="text" name="user" autofocus="on" placeholder="Username" style="width:40%;"></div>
-			<div><input type="text" name="pass" placeholder="Password" style="width:40%;"></div>
+			<div><input type="password" name="pass" placeholder="Password" style="width:40%;"></div>
 			<div><input type="text" name="email" placeholder="Email" style="width:40%;"></div>
 			<div><input type="text" name="age" placeholder="Age" style="width:40%;"></div>
 			<div><input type="text" name="first_name" placeholder="First Name" style="width:40%;"></div>
