@@ -51,11 +51,6 @@
 
   <body>
 
-	<form method="post">
-		<div><input type="text" name="user" autofocus="on" placeholder="User"></div>
-		<div><input type="password" name="pass" placeholder="Password"></div>
-		<div><button type="submit">Login</button></div>
-	</form>
 	<?php 
 		// Error message display
 		switch ($_REQUEST['mess']) {
@@ -69,5 +64,12 @@
 		}
 	?>
 
+	<form method="post">
+		<div><input type="text" name="user" autofocus="on" placeholder="User"></div>
+		<div><input type="password" name="pass" placeholder="Password"></div>
+		<div><button type="submit">Login</button></div>
+	</form>
+	<br>
+	<p><a href="new.php">Register</a></p>
   </body>
 </html>
