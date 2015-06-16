@@ -7,9 +7,6 @@ Simple Login System Open Source
 * Development
 
 
-## Installation
+## Installation and Documentation
 ...
-
-
-## Documentation
 
