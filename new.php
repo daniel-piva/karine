@@ -7,15 +7,20 @@
 		$rec_user = $_POST['user'];
 		$rec_user = addslashes($rec_user);
 		$rec_user = mysql_escape_string($rec_user);
-
-		$rec_email = $_POST['email'];
-		$rec_email = addslashes($rec_email);
-		$rec_email = mysql_escape_string($rec_email);
+		$rec_user = htmlentities($rec_user);
+		$rec_user = htmlspecialchars($rec_user);
 
 		$rec_pass = $_POST['pass'];
 		$rec_pass = addslashes($rec_pass);
 		$rec_pass = mysql_escape_string($rec_pass);
+		$rec_pass = htmlentities($rec_pass);
+		$rec_pass = htmlspecialchars($rec_pass);
+		$rec_pass = $kr_key." 10212 ".$rec_pass;
 		$rec_pass = md5($rec_pass);
+
+		$rec_email = $_POST['email'];
+		$rec_email = addslashes($rec_email);
+		$rec_email = mysql_escape_string($rec_email);
 
 		$rec_age = $_POST['age'];
 		$rec_age = addslashes($rec_age);
