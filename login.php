@@ -12,6 +12,7 @@
 	$rec_pass = mysql_escape_string($rec_pass);
 	$rec_pass = htmlentities($rec_pass);
 	$rec_pass = htmlspecialchars($rec_pass);
+	$rec_pass = $kr_key." 10212 ".$rec_pass;
 	$rec_pass = md5($rec_pass);
 
 
@@ -41,7 +42,7 @@
 ?>
 
 <!DOCTYPE HTML>
-<html>
+<html lang="pt-br">
   <head>
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   	<meta name="Resource-type" content="document"/>
@@ -57,7 +58,7 @@
 	</form>
 	<?php 
 		// Error message display
-		switch ($_GET['mess']) {
+		switch ($_REQUEST['mess']) {
 			case 'no_user':
 				echo "<p style=\"color:red;\">Username and Password not found, try again</p>";
 				break;
