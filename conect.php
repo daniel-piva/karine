@@ -13,6 +13,7 @@
 	// System Information
 	$kr_pglogin = "login.php"; // Page to Login
 	$kr_pgdesti = "index.php"; // Protected Page
+	$kr_key = "q1w2gm#42"; // Protection Code
 
 	// Connection
 	$kr_conexBD = mysql_connect($kr_serv, $kr_user, $kr_pass) or die("Could not connect to the server.");
